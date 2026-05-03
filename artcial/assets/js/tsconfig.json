@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                          // 编译目标：现代浏览器
+    "module": "ESNext",                       // 使用最新的模块标准（配合打包工具如 Vite/Webpack）
+    "lib": ["DOM", "ES6", "DOM.Iterable"],    // 【关键】引入 DOM 类型定义，否则无法识别 document
+    "strict": true,                           // 开启严格模式
+    "moduleResolution": "node",               // 模块解析策略
+    "allowSyntheticDefaultImports": true,     // 允许默认导入
+    "outDir": "./js",                         // 编译后的 JS 输出到 js 文件夹
+    "rootDir": "./ts",                        // 你的 TS 源码放在 ts 文件夹
+    "sourceMap": true                         // 生成 sourceMap，方便调试报错
+  },
+  "include": ["ts/**/*"],
+  "exclude": ["node_modules"]
+}

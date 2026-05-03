@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>宁波科创中学</title>
+        <link rel="stylesheet" href="../assets/css/style.css">
+    <div class="navbar">
+        <div class="nav-container">
+            <!-- 左侧标题 -->
+            <div class="logo-area">
+                <img src="../assets/images/icon.png" alt="校徽">
+                <div class="logo-text">
+                    <h1>宁波科创中学</h1>
+                    <h3>Ningbo Science And Innovation High School</h3>
+                </div>
+            </div>
+
+            <!-- 汉堡菜单 -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- 导航菜单 -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">网站首页</a></li>
+                <li><a href="about.html">学校概况</a></li>
+                <li><a href="news.html">新闻中心</a></li>
+                <li><a href="admissions.html">招生专栏</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+                <li><a href="about-site.html">关于网站</a></li>
+            </ul>
+        </div>
+    </div>
+</head>
+<body>
+        <section id="about" class="school-intro">
+            <div class="container">
+                <div class="feature-item">
+                <p>
+                <h3 style="font-size: 36px;">{{ user_name }}</h3>
+                <p class="avatar"><img src="{{ user_picture }}" alt="用户头像"></p>
+                </div>
+    <!-- 2. 右侧文字区域（独立出来） -->
+    <div class="content">
+        <!-- 如果有其他正文内容，也可以放在这里 -->
+        <!-- <p>{{ html_body|safe }}</p> -->
+    </div>
+                </div>
+
+            </div>
+        </section>
+{{ html_body|safe }}
+    <script src="../assets/js/main.js"></script>
+</body>
