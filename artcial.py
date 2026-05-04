@@ -157,7 +157,7 @@ class MainWindow(QMainWindow):
                 except Exception as e:
                     print(f"保存 pickle 文件失败: {e}")
                 content_html = '<div class="container">\n  <div class="feature-grid">\n'
-                for artical in data_list:
+                for artical in reversed(data_list):
                     content_html += f'''
 
 <div class="feature-item">
